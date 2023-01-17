@@ -1,6 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
+alias python=python3
+alias pip=pip3
+alias fthesis=/home/titor/Documents/thesis/
+alias run='python ~/Documents/thesis/hec4_python/aiwold.py'
+alias activate='source ~/Documents/thesis/hec4_python/venv/bin/activate'
+alias vhec4='v ~/Documents/thesis/hec4_python/HEC4/source_code/hec4.for'
+alias create='rm ~/Documents/thesis/hec4_python/HEC4/source_code/p.out && gfortran -std=legacy -ffixed-form -fno-range-check ~/Documents/thesis/hec4_python/HEC4/source_code/hec4.for || gfortran -std=legacy -ffixed-form -fno-range-check ~/Documents/thesis/hec4_python/HEC4/source_code/hec4.for' 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -9,7 +15,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="nanotech"
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -98,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias v=openNvim
+alias uu="sudo nala update && sudo nala upgrade"
 alias guc="git reset --soft HEAD~"
 # NVM configuration
 export NVM_DIR="$HOME/.nvm"

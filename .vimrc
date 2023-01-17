@@ -1,3 +1,4 @@
+let g:coc_disable_startup_warning = 1
 set number
 set mouse=a
 set numberwidth=1
