@@ -241,3 +241,5 @@ function CheckNextParens(c)
   endif
   return a:c
 endfunction
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
